@@ -206,7 +206,7 @@ nav img {
 }
 
 .destinations {
-  padding: 3% 4%;
+  padding: 4% 4%;
   width: 100%;
   height: 75vh;
   background-color: #FFF6EC;
@@ -215,6 +215,7 @@ nav img {
 .word {
   font-weight: 500;
   color: #A27C61;
+  margin-left: 10px;
 }
 
 .word h2 {
@@ -239,6 +240,7 @@ nav img {
   margin-bottom: 10px;
   width: calc(16.66% - 15px);
   height: 250px;
+  margin-left: 10px;
 }
 
 .gallery-thumb:after {

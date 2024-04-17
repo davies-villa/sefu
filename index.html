@@ -61,35 +61,37 @@
               <form class="form">
                 <div class="row mb-2"
                   style="background-color: #FFF6EC; border-radius: 5px; border: solid 20px #FFF6EC; width: 100%;">
-                  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <select name="" id="" class="form-control" custom-select>
-                      <option value="">Destinations</option>
-                      <option value="">Victorai Falls, Zimbabwe</option>
-                      <option value="">South Africa, Capetown</option>
-                      <option value="">Tanzania, Zanzibar</option>
-                      <option value="">Dubai, Tower</option>
-                      <option value="">Serengeti, Kenya</option>
-                      <option value="">Chobe, Botswana</option>
-                      <option value="">Bulawayo, Zimbabwe</option>
-                      <option value="">Great, Zimbabwe</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-                    <input type="text" value="Select date range" class="form-control" name="daterange">
-                  </div>
 
-                  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <input type="text" class="form-control" placeholder="Travelers Count">
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                          <div class="select-wrapper">
+                            <div class="form-control select-selected">Destinations</div>
+                            <div class="select-items select-hide">
+                              <div>Zimbabwe</div>
+                              <div>South Africa</div>
+                              <div>Tanzania</div>
+                              <div>Botswana</div>
+                              <div>Kenya</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                          <input type="text" placeholder="Select date range" class="form-control" name="daterange">
+                        </div>
+                  
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                          <input type="text" class="form-control" placeholder="Travelers Count">
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-2">
+                          <button type="submit" class="btn btn-primary btn-block form-control"
+                            style="background-color: #A27C61; border: none; border-radius: 5px;">Submit</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-2">
-                    <button type="submit" class="btn btn-primary btn-block form-control"
-                      style="background-color: #A27C61; border: none; border-radius: 5px;">Submit</button>
-                  </div>
+                  
                 </div>
-
             </div>
           </div>
-
         </div>
   </header>
 
@@ -99,6 +101,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/Index.js"></script>
 </body>
 <script>
   $(function () {

@@ -114,27 +114,79 @@ nav img {
 .hero{
   margin-left: 15px;
 }
-.form-control{
+.form-control {
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #A27C61; /* Add a bottom border with the desired color */
-  border-radius: 0; /* Remove any border radius */
-  width: calc(100% - 12px); /* Adjust padding and border */
-  transition: width 0.5s ease; /* Smooth transition */
-}
-.custom-select {
-  width: 100%; 
-  transition: width 0.5s ease; 
-}
-.smooth-dropdown {
-  width: 100%; /* Match the width of the form container */
-  transition: all 0.3s ease; /* Add smooth transition effect */
+  border-bottom: 1px solid #A27C61;
+  border-radius: 0;
+  width: calc(100% - 12px);
+  transition: width 0.5s ease;
+  font-size: 15px;
+  color: #333;
 }
 
 .form-control:focus {
-  outline: none; /* Remove the default focus outline */
-  border-color: #A27C61; /* Change the border color on focus if needed */
+  outline: none;
+  border-color: #A27C61;
 }
+
+.form-control {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #A27C61;
+  border-radius: 0;
+  width: calc(100% - 12px);
+  transition: width 0.5s ease;
+  font-size: 15px;
+  color: #333;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #A27C61;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+  .select-selected {
+    position: relative;
+    display: inline-block; /* Change display to inline-block */
+    cursor: pointer;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.select-items {
+  position: absolute;
+  background-color: #FFF6EC; /* Adjust background color as needed */
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 5px;
+  z-index: 999;
+  width: 100%;
+  display: none;
+  overflow: hidden; /* Hide overflow to ensure smooth animation */
+  transition: height 0.3s ease-in-out; /* Add transition for height */
+  height: 0; /* Initially set height to 0 */
+}
+
+.select-items.select-show {
+  display: block;
+  height: auto; /* Set height to auto to reveal dropdown content */
+}
+
+
+.select-items div {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.select-items div:hover {
+  background-color: rgba(162, 124, 97, 0.1);
+}
+
+
 
 @media (max-width: 768px) {
   .header{

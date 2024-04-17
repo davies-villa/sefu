@@ -180,7 +180,9 @@ nav img {
   background-color: rgba(162, 124, 97, 0.1);
 }
 
-
+.btn.btn-primary {
+  color: #FFF6EC; /* Set text color to #FFF6EC */
+}
 
 @media (max-width: 768px) {
   .header{

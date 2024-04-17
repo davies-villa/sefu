@@ -181,7 +181,7 @@ nav img {
 }
 
 .btn.btn-primary {
-  color: #FFF6EC; /* Set text color to #FFF6EC */
+    color: #FFF6EC; /* Set text color to #FFF6EC */
 }
 
 @media (max-width: 768px) {
@@ -207,6 +207,8 @@ nav img {
 
 .destinations {
   padding: 3% 4%;
+  width: 100%;
+  height: 75vh;
   background-color: #FFF6EC;
 }
 
@@ -223,25 +225,115 @@ nav img {
   font-size: 18px;
 }
 
+.gallery {
+  margin-top: 30px;
+}
+
 .gallery-thumb {
   position: relative;
   display: inline-block;
   cursor: pointer;
   overflow: hidden;
   border-radius: 5px;
-  margin-bottom: 20px;
-  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: calc(16.66% - 15px);
+  height: 250px;
+}
+
+.gallery-thumb:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: rgba(rgba(221, 196, 170, 0.8));
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
 }
 
 .gallery-thumb img {
+  transform: scale(1.03);
+  transition: .3s transform ease;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.gallery-thumb .gallery-text {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 13px;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s all ease;
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+.gallery-thumb .gallery-text h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-thumb .gallery-text .location {
+  font-size: .8rem;
+  color: #fff;
+}
+
+.gallery-thumb:hover {
+  z-index: 3;
+}
+
+.gallery-thumb:hover h3 {
+  color: #ffffff;
+}
+
+.gallery-thumb:hover .location {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .gallery-thumb:hover img {
-  transform: scale(1.03);
+  transform: scale(1);
+}
+
+.gallery-thumb:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-thumb:hover .gallery-text {
+  transition-delay: .2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-thumb .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 23%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Adjust the alpha value for transparency */
+  z-index: 2;
+}
+
+/* Clearfix for gallery container */
+.gallery::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .gallery-thumb .overlay {
@@ -249,7 +341,7 @@ nav img {
   top: 0;
   left: 0;
   width: 100%;
-  height: ;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -262,17 +354,37 @@ nav img {
   opacity: 1;
 }
 
-.gallery-text {
-  position: absolute;
-  bottom: 0;
-  left: 0; /* Position at the bottom left */
-  color: #fff;
-  padding: 10px;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+/* For large screens */
+@media (min-width: 992px) {
+  .gallery-thumb {
+    width: calc(16.66% - 15px);
+  }
 }
 
-.gallery-thumb:hover .gallery-text {
-  opacity: 1;
+/* For medium screens */
+@media (max-width: 991px) {
+  .gallery-thumb {
+    width: calc(25% - 15px);
+  }
 }
 
+/* For small screens */
+@media (max-width: 768px) {
+  .gallery-thumb {
+    width: calc(50% - 15px);
+  }
+  .word h2 {
+    font-size: 16px;
+  }
+  
+  .word p {
+    font-size: 10px;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 576px) {
+  .gallery-thumb {
+    width: calc(100% - 15px);
+  }
+}

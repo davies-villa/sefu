@@ -363,17 +363,17 @@ nav img {
   .gallery-thumb {
     width: calc(25% - 15px);
   }
+  .gallery-thumb img {
+    width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+    object-fit: contain; /* Ensure the entire image fits within the container */
+  }
 }
 
 /* For small screens */
 @media (max-width: 768px) {
-  .word{
-    margin-left: 10px;
-  }
   .gallery-thumb {
     width: calc(50% - 15px);
-    margin-left: 10px;
-    
   }
   
   .word h2 {

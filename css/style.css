@@ -130,11 +130,6 @@ nav img {
   border-color: #A27C61;
 }
 
-.col-lg-4 input[type="text"][name="daterange"] {
-  background-color: #FFF6EC; /* Set background color to #FFF6EC */
-}
-
-
 .form-control:focus {
   outline: none;
   border-color: #A27C61;

@@ -214,15 +214,13 @@ nav img {
 }
 
 .word h2 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.word p {
-  font-size: 18px;
-}
 
 .gallery {
-  margin-top: 10px;
+  margin-top: 15px;
+  height: auto;
 }
 
 .gallery-thumb {
@@ -355,6 +353,9 @@ nav img {
 
 /* For medium screens */
 @media (max-width: 991px) {
+  .gallery{
+    margin-top: 15px;
+  }
   .gallery-thumb {
     width: calc(25% - 15px);
   }
@@ -373,10 +374,7 @@ nav img {
   
   .word h2 {
     font-size: 20px;
-  }
-  
-  .word p {
-    font-size: 15px;
+    margin-top: 15px;
   }
 }
 
@@ -385,12 +383,12 @@ nav img {
   .gallery-thumb {
     width: calc(100% - 15px);
     margin-left: 10px;
+    margin-bottom: 5px;
   }
 .word h2 {
     margin-left: 10px;
   }
-  
-  .word p {
-   margin-left: 10px;
-  }
 }
+
+
+

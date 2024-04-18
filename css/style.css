@@ -389,5 +389,13 @@ nav img {
 @media (max-width: 576px) {
   .gallery-thumb {
     width: calc(100% - 15px);
+    margin-left: 10px;
+  }
+.word h2 {
+    margin-left: 10px;
+  }
+  
+  .word p {
+   margin-left: 10px;
   }
 }

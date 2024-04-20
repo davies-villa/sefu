@@ -496,6 +496,7 @@ nav img {
 }
 
 .activity-item h3 {
+  font-size: 20px;
   margin-bottom: 10px;
   position: relative;
 }

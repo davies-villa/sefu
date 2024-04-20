@@ -536,3 +536,44 @@ nav img {
 .activities .btn-primary{
   background-color: #A27C61;
 }
+
+.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.newsletter-content {
+  flex: 1;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: inline-block;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #DDC4AA;
+}
+
+.social-icon{
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px;
+  font-size: 14px;
+  color: #DDC4AA;
+}

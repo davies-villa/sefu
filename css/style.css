@@ -177,6 +177,10 @@ nav img {
     height: 67vh;
   }
 
+  nav img{
+    width: 100px;
+  }
+
   .intro-wrap h1{
     font-size: 30px;
     font-weight: 600;

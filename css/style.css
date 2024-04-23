@@ -491,7 +491,7 @@ nav img {
 }
 
 .activity-item h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -499,7 +499,7 @@ nav img {
 .activity-item .badge {
   background-color: #FF5733; /* Adjust badge background color */
   color: white;
-  font-size: 12px;
+  font-size: 11px;
   padding: 3px 6px;
   border-radius: 3px;
   position: absolute;
@@ -509,6 +509,7 @@ nav img {
 
 .activity-info p {
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
 .activity-item .rating {

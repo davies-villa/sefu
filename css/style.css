@@ -537,38 +537,6 @@ nav img {
   background-color: var(--primary-bg-color);
 }
 
-.newsletter {
-  display: flex;
-  padding: 0.5% 4%;
-}
-
-.newsletter-content {
-  flex: 1;
-}
-
-.newsletter-content input[type="text"],
-.newsletter-content input[type="email"] {
-  width: 40%; /* Set the width of the input fields to 100% */
-  padding: 10px; /* Add padding */
-  margin-bottom: 10px; /* Add margin bottom */
-  border: 1px solid #ccc; /* Add border */
-  border-radius: 5px; /* Add border radius */
-}
-
-.newsletter-content button[type="submit"] {
-  padding: 10px 20px; /* Add padding */
-  background-color: #007bff; /* Set background color */
-  color: white; /* Set text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add border radius */
-  cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-/* Style for button hover effect */
-.newsletter-content button[type="submit"]:hover {
-  background-color: #0056b3; /* Change background color on hover */
-}
-
 footer {
   background-color: #f0f0f0;
   padding: 20px 0;

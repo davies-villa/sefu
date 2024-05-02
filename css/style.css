@@ -530,6 +530,57 @@ nav img {
   cursor: pointer;
 }
 
+
+ /* CSS for carousel indicators and controls */
+ .carousel-indicators {
+  bottom: 0px; /* Adjust position as needed */
+}
+
+.carousel-indicators li {
+  background-color: #fff; /* Default color */
+  border-radius: 50%; /* Make them circles */
+  width: 7px; /* Adjust size */
+  height: 7px; /* Adjust size */
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Active color */
+  width: 7px; /* Adjust size */
+  height: 7px; /* Adjust size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 9999; /* Ensure the arrows are above the images */
+  display: none; /* Initially hide the arrows */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.carousel-control-prev {
+  left: 5px;
+}
+
+.carousel-control-next {
+  right: 5px;
+}
+
 .activities .reviewers{
   color: var(--primary-bg-color);
 }

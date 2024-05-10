@@ -104,6 +104,9 @@ nav img {
   left: 0;
 }
 
+.hero{
+  margin-left: 15px;
+}
 .container {
   position: relative;
   width: 85%;

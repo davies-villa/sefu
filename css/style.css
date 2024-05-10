@@ -405,68 +405,34 @@ nav img {
     }
   }
   
-.offer-section {
-  padding: 3% 4%;
-  height: 65vh;
-  width: 100%;
-  position: relative;
-  background-color: #FFF6EC;
-}
+  .did-you-know-section {
+    padding: 3% 4%;
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    background-color: #FFF6EC;
+  }
+  
+  .did-you-know-content {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .did-you-know-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item h2{
+    font-size: 17px;
+  }
+  .carousel-item p {
+    font-size: 15px;
+  }
 
-.offer {
-  position: relative;
-  background-image: url("../img/5.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  height: 50vh;
-}
-
-.offer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Adjust the alpha value for the overlay */
-  border-radius: 10px;
-  /* Same border radius as .offer */
-}
-
-.offer-content {
-  position: absolute;
-  top: 50%;
-  left: 18%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  z-index: 1;
-  text-align: left;
-  /* Align text in the center */
-}
-
-.offer-content h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.offer-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.offer-content button {
-  background-color: #a27c61;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
+  
   .card-blue {
     background-color: var(--primary-bg-color);
     color: var(--secondary-bg-color);
@@ -498,7 +464,7 @@ nav img {
 
 .activity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   width: 100%;
 }

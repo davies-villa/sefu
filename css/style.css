@@ -421,11 +421,13 @@ nav img {
   
   .did-you-know-content h2 {
     font-size: 25px;
+    font-weight: 600;
     margin-bottom: 20px;
   }
   
   .carousel-item h2{
     font-size: 17px;
+    font-weight: 600;
   }
   .carousel-item p {
     font-size: 15px;

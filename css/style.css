@@ -459,8 +459,9 @@ nav img {
 }
 
 .activities h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .activity-grid {
@@ -488,11 +489,12 @@ nav img {
 
 .activity-item .country{
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .activity-item .activity{
   font-size: 18px;
+  font-weight: 500;
 }
 
 .activity-item .price{
@@ -500,13 +502,26 @@ nav img {
   font-weight: 600;
 }
 .activity-item .price .price-extra{
-  font-size: 13px;
+  font-size: 10px;
 }
-.newletter{
-  margin: 0;
+footer {
+  background-color: var(--primary-bg-color); /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */ 
 }
 
+/* CSS to change button text color */
+ footer .container .btn-primary {
+  color: var(--primary-bg-color); /* Change to your desired text color */
+  background-color: var(--secondary-bg-color);
+  border: none;
+}
 
-
-
+footer .list-inline-item .fab{
+  color: #FFF6EC;
+}
+/* CSS to change button hover color */
+footer .container .btn-primary:hover {
+  background-color: var(--primary-bg-color); /* Change to your desired hover background color */
+  color: var(--secondary-bg-color); /* Change to your desired hover border color */
+}
 

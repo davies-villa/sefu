@@ -504,10 +504,6 @@ nav img {
 .activity-item .price .price-extra{
   font-size: 10px;
 }
-footer {
-  background-color: var(--primary-bg-color); /* Change to your desired background color */
-  color: #fff; /* Change to your desired text color */ 
-}
 
 /* CSS to change button text color */
  footer .container .btn-primary {

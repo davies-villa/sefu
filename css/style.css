@@ -124,6 +124,7 @@ nav img {
 .hero{
   padding: 0.5% 4%;
   align-items: center;
+  width: 100%;
 }
 
 
@@ -193,8 +194,8 @@ nav img {
 }
 
 @media (max-width: 768px) {
-  .header{
-    height: 67vh;
+  header{
+    height: 90vh;
   }
 
   nav img{
@@ -210,7 +211,6 @@ nav img {
     width: 100%;
   }
   .hero .container{
-    margin-left: 15px;
     position: relative;
     width: 100%;
   }

@@ -6,7 +6,7 @@
 
 :root {
   --primary-bg-color: #A27C61;
-  --secondary-bg-color: #FFF6EC;
+  --secondary-bg-color: #fff;
   --btn-bg-color: #A27C61;
   --btn-text-color: #fff;
   --btn-hover-bg-color: #7E5B45;
@@ -21,7 +21,6 @@ body {
 }
 header {
   background-image: url("../images/background.jpg");
-  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,21 +103,19 @@ nav img {
   left: 0;
 }
 
-nav .container {
-  position: relative;
-  width: 100%;
-  align-items: center;
+header .container{
+  padding: 0.5% 3%;
 }
 .intro-wrap {
   text-align: center;
-  margin: 50px 0;
-  width: 90%;
+  margin-top: 50px;
+  width: 100%;
   color: var(--primary-bg-color);
 }
 .intro-wrap h1{
   font-size: 65px;
   font-weight: 600;
-  color: #FFF6EC;
+  color: #FFF;
 }
 .hero{
   align-items: center;
@@ -127,6 +124,7 @@ nav .container {
 
 .hero .container{
   width: 100%;
+  padding-bottom: 100px;
 }
 
 .form-control {
@@ -195,16 +193,14 @@ nav .container {
 }
 
 @media (max-width: 768px) {
-  header{
-    height: 60vh;
-  }
+ 
 
   nav img{
     width: 100px;
   }
 
   .intro-wrap h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
   }
   .hero {
@@ -214,6 +210,7 @@ nav .container {
   .hero .container{
     position: relative;
     width: 100%;
+    padding-bottom: 20px;
   }
 }
 
@@ -221,7 +218,7 @@ nav .container {
 .destinations {
   padding: 3% 4%;
   width: 100%;
-  background-color: #FFF6EC;
+  background-color: #FFF;
 }
 
 .word {
@@ -258,7 +255,7 @@ nav .container {
   right: 0;
   bottom: 0;
   content: "";
-  background: rgba(rgba(221, 196, 170, 0.8));
+  background: rgba(rgba(221, 196, 170, 0.9));
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -336,7 +333,7 @@ nav .container {
   left: 0;
   width: 100%;
   height: 23%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
   /* Adjust the alpha value for transparency */
   z-index: 2;
 }
@@ -354,7 +351,7 @@ nav .container {
   left: 0;
   width: 100%;
   height: 80px; /* Adjust the height of the overlay */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)); /* Apply a gradient */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 5)); /* Apply a gradient */
   z-index: 2;
 }
 
@@ -413,7 +410,7 @@ nav .container {
     padding: 0% 4%;
     width: 100%;
     position: relative;
-    background-color: #FFF6EC;
+    background-color: #FFF;
   }
   
   .did-you-know-content {
@@ -447,13 +444,9 @@ nav .container {
     background-color: var(--primary-bg-color);
 }
 
-.container {
-    padding: 20px;
-}
-
 .activities {
   padding: 2% 4%;
-  background-color: #FFF6EC;
+  background-color: #FFF;
 }
 
 

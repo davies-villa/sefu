@@ -112,7 +112,7 @@ nav .container {
 .intro-wrap {
   text-align: center;
   margin: 50px 0;
-  width: 100%;
+  width: 90%;
   color: var(--primary-bg-color);
 }
 .intro-wrap h1{
@@ -121,7 +121,6 @@ nav .container {
   color: #FFF6EC;
 }
 .hero{
-  padding: 0.5% 0%;
   align-items: center;
   width: 100%;
 }

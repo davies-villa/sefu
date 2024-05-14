@@ -60,7 +60,7 @@ nav img {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency here */
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust the transparency here */
   backdrop-filter: blur(5px); /* Adjust the blur radius here */
   top: 63px;
   left: -100%;
@@ -113,9 +113,15 @@ header .container{
   color: var(--primary-bg-color);
 }
 .intro-wrap h1{
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 600;
   color: #FFF;
+}
+
+.intro-wrap p{
+  color: #FFF6EC;
+  font-size: 12.8px;
+  margin-top: 1rem;
 }
 .hero{
   align-items: center;
@@ -199,9 +205,16 @@ header .container{
     width: 100px;
   }
 
+  .intro-wrap{
+    text-align: left;
+    padding: 0% 6%;
+  }
   .intro-wrap h1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
+  }
+  br{
+    display: none;
   }
   .hero {
     border-radius: 5px;

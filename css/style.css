@@ -322,7 +322,7 @@ header .container{
 }
 
 .gallery-thumb:hover .location {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .gallery-thumb:hover img {
@@ -405,6 +405,13 @@ header .container{
     font-size: 15px;
     margin-top: 15px;
   }
+  .gallery-thumb .gallery-text h3 {
+    font-size: 13px;
+  }
+  
+  .gallery-thumb .gallery-text .location {
+    font-size: 10px;
+  }
 }
 
 /* For extra small screens */
@@ -434,24 +441,18 @@ header .container{
   }
   
   .did-you-know-content h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
   }
   
   .carousel-item h2{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
   }
   .carousel-item p {
-    font-size: 15px;
+    font-size: 12.8px;
   }
-
-  
-  .card-blue {
-    background-color: var(--primary-bg-color);
-    color: var(--secondary-bg-color);
-}
 
 .section {
     background-color: var(--primary-bg-color);
@@ -498,13 +499,14 @@ header .container{
 }
 
 .activity-item .country{
-  font-size: 13px;
+  font-size: 12.8px;
   font-weight: 400;
 }
 
 .activity-item .activity{
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 75%;
 }
 
 .activity-item .price{

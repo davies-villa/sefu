@@ -530,7 +530,7 @@ footer .container .btn-primary:hover {
   color: var(--secondary-bg-color); /* Change to your desired hover border color */
 }
 
-.text-white {
+.text-white i{
   margin-right: 15px; /* Adjust this value as needed */
 }
 

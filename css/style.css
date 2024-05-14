@@ -242,11 +242,7 @@ header .container{
 
 .word h2 {
   font-size: 20px;
-}
-
-
-.gallery {
-  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .gallery-thumb {
@@ -442,13 +438,13 @@ header .container{
   
   .did-you-know-content h2 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px;
   }
   
   .carousel-item h2{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
   }
   .carousel-item p {
     font-size: 12.8px;
@@ -473,6 +469,7 @@ header .container{
   font-size: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-weight: 500;
 }
 
 .activity-grid {

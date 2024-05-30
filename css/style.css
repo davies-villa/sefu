@@ -806,5 +806,13 @@ nav {
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .activity-text{
+    font-size: 18px;
+  }
+  .activity-paragraph{
+    font-size: 12.8px;
+  }
 
+}
 

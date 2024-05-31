@@ -780,7 +780,7 @@ nav {
 .activity-item {
   border-radius: 2px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 15px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left; 
@@ -808,7 +808,7 @@ nav {
   font-size: 12px;
 }
 .activity-item .price{
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
 }
 .activity-item .price .price-extra{

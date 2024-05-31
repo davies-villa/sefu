@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -81,7 +82,9 @@
                     <input type="text" placeholder="Select date range" class="form-control" name="daterange">
                   </div>
                   <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <input type="text" class="form-control" placeholder="Group Size" style="color: #fff;">
+                    <input type="text" class="form-control" placeholder="Number of people
+
+                    " style="color: #fff;">
                   </div>
                   <div class="col-sm-12 col-md-6 mb-lg-0 col-lg-2">
                     <button type="submit" class=" btn-block search-btn form-control"
@@ -255,7 +258,12 @@
       <p class="activity-paragraph">Discover To-do Fun Activities</p>
       <div class="activity-grid">
         <div class="activity-item">
-          <img src="img/Gorge swing.jpg" alt="Activity 1" style="height: 250px;">
+          <div class="image-container">
+            <img src="img/Gorge swing.jpg" alt="Activity 1" style="height: 250px;">
+            <button class="like-button" onclick="toggleLike()">
+              <img src="img/heart.png"  alt="Like" class="heart-icon">
+            </button>
+          </div>
           <div class="activity">
             <h1>Gorge Swing</h1>
           </div>
@@ -269,33 +277,44 @@
           </div>
           <div class="review-item">
             <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.7</span> • (8
+                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.8</span> • (8
               reviews)</h1>
           </div>
           <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$115</div>
         </div>
         <div class="activity-item">
-          <img src="img/vicfalls.png" alt="Activity 1" style="height: 250px;">
+          <div class="image-container">
+            <img src="img/vicfalls.png" alt="Activity 1" style="height: 250px;">
+            <button class="like-button" onclick="toggleLike()">
+              <img src="img/heart.png"  alt="Like" class="heart-icon">
+            </button>
+          </div>
           <div class="activity">
             <h1>Tour of the Victoria Falls</h1>
           </div>
           <div class="activity-info">
             <p>
-              The Victoria Falls Gorge Swing is an adrenaline-pumping adventure that promises an unforgettable
-              experience for thrill-seekers. Located at the majestic Victoria Falls. <a href="#" target="_blank"
-                style="color: #C38144;">Read
+              Embark on an awe-inspiring tour of Victoria Falls, one of the Seven Natural Wonders of the World. Witness
+              the sheer power and beauty of the "Smoke that Thunders" as millions of liters of water cascade over the
+              edge every minute. <a href="#"
+                target="_blank" style="color: #C38144;">Read
                 more</a>
             </p>
           </div>
           <div class="review-item">
             <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.7</span> • (12
+                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.9</span> • (40
               reviews)</h1>
           </div>
           <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$15</div>
         </div>
         <div class="activity-item">
-          <img src="img/safaridrive.jpg" alt="Activity 1" style="height: 250px;">
+          <div class="image-container">
+            <img src="img/safaridrive.jpg" alt="Activity 1" style="height: 250px;">
+            <button class="like-button" onclick="toggleLike()">
+              <img src="img/heart.png"  alt="Like" class="heart-icon">
+            </button>
+          </div>
           <div class="activity">
             <h1>Chobe Day Trip</h1>
           </div>
@@ -309,13 +328,18 @@
           </div>
           <div class="review-item">
             <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.7</span> • (40
+                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.8</span> • (12
               reviews)</h1>
           </div>
           <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$180</div>
         </div>
         <div class="activity-item">
+          <div class="image-container">
           <img src="img/pureafrica.jpg" alt="Activity 1" style="height: 250px;">
+            <button class="like-button" onclick="toggleLike()">
+              <img src="img/heart.png"  alt="Like" class="heart-icon">
+            </button>
+          </div>
           <div class="activity">
             <h1>Zambezi Cruise</h1>
           </div>
@@ -347,6 +371,20 @@
   <script src="js/custom.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
+    function toggleLike() {
+     const button = document.querySelector('.like-button');
+     const icon = button.querySelector('i');
+     button.classList.toggle('liked');
+     if (button.classList.contains('liked')) {
+         icon.classList.remove('far');
+         icon.classList.add('fas');
+     } else {
+         icon.classList.remove('fas');
+         icon.classList.add('far');
+     }
+ }
+   </script>
+  <script>
     $(function () {
       $('input[name="daterange"]').daterangepicker({
         opens: 'left'
@@ -365,49 +403,7 @@
       once: true
     });
   </script>
-  <script>
-    $(document).ready(function () {
-
-      $('.carousel').hover(function () {
-        $('.carousel-control-prev, .carousel-control-next').fadeIn();
-      }, function () {
-        $('.carousel-control-prev, .carousel-control-next').fadeOut();
-      });
-
-
-      $('#activityCarousel').on('slid.bs.carousel', function () {
-        var $carousel = $(this);
-        var $prevArrow = $carousel.find('.carousel-control-prev');
-        var $nextArrow = $carousel.find('.carousel-control-next');
-
-
-        if ($carousel.find('.carousel-item:first').hasClass('active')) {
-          $prevArrow.hide();
-        } else {
-          $prevArrow.show();
-        }
-
-
-        if ($carousel.find('.carousel-item:last').hasClass('active')) {
-          $nextArrow.hide();
-        } else {
-          $nextArrow.show();
-        }
-      });
-
-
-      var numImages = $('.carousel-item').length;
-      for (var i = 0; i < numImages; i++) {
-        var indicator = '<li data-target="#activityCarousel" data-slide-to="' + i + '"></li>';
-        $('.carousel-indicators').append(indicator);
-      }
-
-      $('.carousel-item').eq(0).addClass('active');
-
-
-      $('.carousel-item:gt(5)').remove();
-    });
-  </script>
+  
 </body>
 
 </html>

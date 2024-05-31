@@ -505,24 +505,29 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .hero{
+  .hero {
     padding-bottom: 4rem;
     padding-top: 4rem;
   }
-  .hero .hero-text{
+
+  .hero .hero-text {
     font-size: 30px;
     margin-bottom: 1rem;
   }
-  .hero-paragraph{
+
+  .hero-paragraph {
     font-size: 12px;
   }
+
   .form input::placeholder {
     font-size: 15px;
   }
+
   .form {
     padding: 25px;
   }
-  .search-btn{
+
+  .search-btn {
     height: 45px;
   }
 }
@@ -532,9 +537,11 @@ nav {
   width: 100%;
   background-color: #fff;
 }
-.dest-text{
+
+.dest-text {
   margin-bottom: 10px;
 }
+
 .destinations-text {
   margin-bottom: 0;
   font-size: 20px;
@@ -659,8 +666,8 @@ nav {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px; 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 5)); 
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 5));
   z-index: 2;
 }
 
@@ -677,22 +684,24 @@ nav {
 
 
 @media (max-width: 991px) {
-  .gallery{
+  .gallery {
     margin-top: 15px;
   }
+
   .gallery-thumb {
     width: calc(25% - 4px);
   }
+
   .gallery-thumb img {
     width: 100%;
-    height: auto; 
-    object-fit: contain; 
+    height: auto;
+    object-fit: contain;
   }
 }
 
 
 @media (max-width: 768px) {
-  
+
   .gallery-thumb {
     width: calc(50% - 4px);
   }
@@ -702,14 +711,16 @@ nav {
     margin-top: 15px;
     font-weight: 600;
   }
-  .destinations-paragraph{
+
+  .destinations-paragraph {
     font-size: 12px;
     font-weight: 400;
   }
+
   .gallery-thumb .gallery-text h3 {
     font-size: 15px;
   }
-  
+
   .gallery-thumb .gallery-text .location {
     font-size: 12px;
   }
@@ -721,44 +732,35 @@ nav {
     width: calc(50% - 3px);
     margin-bottom: 5px;
   }
-  }
+}
 
-  
-  .did-you-know-section {
-    padding: 0% 4%;
-    width: 100%;
-    position: relative;
-    background-color: #FFF;
-  }
-  
-  .did-you-know-content {
-    position: relative;
-    color: #fff;
-    z-index: 1;
-    text-align: center;
-  }
-  
-  .did-you-know-content h2 {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  
-  .carousel-item h2{
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .carousel-item p {
-    font-size: 12px;
-  }
 
-  
+.did-you-know-section {
+  padding: 3% 4%;
+  width: 100%;
+  position: relative;
+  background-color: #FFF;
+}
+
+.did-you-know-content {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+
+.did-you-know-content h2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
 .activities {
   padding: 2% 4%;
   background-color: #fff;
 }
 
-.activity-text{
+.activity-text {
   font-size: 20px;
   margin-bottom: 0px;
   margin-top: 20px;
@@ -766,10 +768,11 @@ nav {
   color: #534439;
 }
 
-.activity-paragraph{
+.activity-paragraph {
   color: #C38144;
   font-size: 15px;
 }
+
 .activity-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -783,7 +786,7 @@ nav {
   padding: 15px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left; 
+  text-align: left;
 }
 
 .activity-item img {
@@ -793,38 +796,79 @@ nav {
   border-radius: 2px;
 }
 
-.activity-item .country{
+.image-container {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+.like-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  /* Add !important to ensure it overrides other styles */
+  transition: transform 0.3s;
+}
+
+.like-button img {
+  width: 25px;
+  height: 25px;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.like-button.liked i {
+  color: red;
+  /* Lighter red when liked */
+}
+
+.like-button.liked:hover i {
+  color: red;
+  /* Full red on hover when liked */
+}
+
+.activity-item .country {
   color: #000;
   font-size: 12px;
   font-weight: 400;
 }
 
-.activity-item .activity h1{
+.activity-item .activity h1 {
   font-size: 15px;
   font-weight: 600;
 }
 
-.activity-item .activity-info{
+.activity-item .activity-info {
   font-size: 12px;
 }
-.activity-item .price{
+
+.activity-item .price {
   font-size: 20px;
   font-weight: 600;
 }
-.activity-item .price .price-extra{
+
+.activity-item .price .price-extra {
   font-size: 12px;
   font-weight: 400;
   color: #000;
 }
 
 @media (max-width: 768px) {
-  .activity-text{
+  .activity-text {
     font-size: 15px;
     font-weight: 600;
   }
-  .activity-paragraph{
+
+  .activity-paragraph {
     font-size: 12px;
   }
+
   .activity-item img {
     width: 100%;
     height: 300px;
@@ -833,4 +877,3 @@ nav {
   }
 
 }
-

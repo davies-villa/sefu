@@ -745,7 +745,7 @@ nav {
   }
   
   .carousel-item h2{
-    font-size: 1px;
+    font-size: 12px;
     font-weight: 500;
   }
   .carousel-item p {
@@ -780,7 +780,9 @@ nav {
 .activity-item {
   border-radius: 2px;
   margin-bottom: 20px;
+  padding: 10px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left; 
 }
 
@@ -797,14 +799,16 @@ nav {
   font-weight: 400;
 }
 
-.activity-item .activity{
+.activity-item .activity h1{
   font-size: 15px;
   font-weight: 600;
-  opacity: 90%;
 }
 
+.activity-item .activity-info{
+  font-size: 12px;
+}
 .activity-item .price{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 }
 .activity-item .price .price-extra{

@@ -148,15 +148,15 @@ nav {
   position: fixed;
   right: 0;
   z-index: 2000;
-  padding-top: 20px;
+  padding-top: 30px;
   background: #D9B189;
   height: calc(100vh);
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
-  transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: 0.5s all cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: 0.5s all cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.5s all cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .offcanvas-menu .site-mobile-menu {
@@ -208,7 +208,7 @@ nav {
 }
 
 .site-mobile-menu .site-nav-wrap a {
-  padding: 5px 20px;
+  padding: 20px 20px;
   display: block;
   position: relative;
   color: #fff;
@@ -236,8 +236,7 @@ nav {
 
 .site-mobile-menu .site-nav-wrap>li>a {
   text-align: center;
-  padding-left: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
@@ -514,6 +513,12 @@ nav {
     font-size: 30px;
     margin-bottom: 1rem;
   }
+  .hero-paragraph{
+    font-size: 12px;
+  }
+  .form input::placeholder {
+    font-size: 15px;
+  }
   .form {
     padding: 25px;
   }
@@ -593,7 +598,7 @@ nav {
 }
 
 .gallery-thumb .gallery-text h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #fff;
   margin: 0;
@@ -601,7 +606,7 @@ nav {
 }
 
 .gallery-thumb .gallery-text .location {
-  font-size: 12.8px;
+  font-size: 12px;
   color: #fff;
 }
 
@@ -698,7 +703,7 @@ nav {
     font-weight: 600;
   }
   .destinations-paragraph{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
   }
   .gallery-thumb .gallery-text h3 {
@@ -706,7 +711,7 @@ nav {
   }
   
   .gallery-thumb .gallery-text .location {
-    font-size: 12.8px;
+    font-size: 12px;
   }
 }
 
@@ -734,17 +739,17 @@ nav {
   }
   
   .did-you-know-content h2 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 20px;
   }
   
   .carousel-item h2{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 1px;
+    font-weight: 500;
   }
   .carousel-item p {
-    font-size: 12.8px;
+    font-size: 12px;
   }
 
   
@@ -788,12 +793,12 @@ nav {
 
 .activity-item .country{
   color: #000;
-  font-size: 12.8px;
+  font-size: 12px;
   font-weight: 400;
 }
 
 .activity-item .activity{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   opacity: 90%;
 }
@@ -803,7 +808,7 @@ nav {
   font-weight: 600;
 }
 .activity-item .price .price-extra{
-  font-size: 12.8px;
+  font-size: 12px;
   font-weight: 400;
   color: #000;
 }
@@ -811,9 +816,16 @@ nav {
 @media (max-width: 768px) {
   .activity-text{
     font-size: 15px;
+    font-weight: 600;
   }
   .activity-paragraph{
-    font-size: 8px;
+    font-size: 12px;
+  }
+  .activity-item img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 2px;
   }
 
 }

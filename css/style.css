@@ -875,5 +875,8 @@ nav {
     margin-bottom: 10px;
     border-radius: 2px;
   }
-
+  .like-button img {
+    width: 25px;
+    height: 25px;
+  }
 }

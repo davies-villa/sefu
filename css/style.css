@@ -644,17 +644,6 @@ nav {
   visibility: visible;
 }
 
-.gallery-thumb .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 23%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 2;
-}
-
-
 .gallery::after {
   content: "";
   display: table;
@@ -736,10 +725,30 @@ nav {
 
 
 .did-you-know-section {
-  padding: 3% 4%;
+  padding: 1% 4%;
   width: 100%;
   position: relative;
   background-color: #FFF;
+}
+
+.did-you-know-section .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.did-you-know-section .container-fluid{
+  background-image: url(../img/traveler.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
 }
 
 .did-you-know-content {

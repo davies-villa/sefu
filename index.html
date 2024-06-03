@@ -18,9 +18,7 @@
 
 <body>
 
-  <div class="loader" id="loader">
-    <img src="img/loader1.png" id="loaderImage" alt="Loader Image">
-  </div>
+
 
   <div class="header" id="lazy-image">
 
@@ -329,29 +327,6 @@
       once: true
     });
   </script>
-
-  <script>
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const loader = document.getElementById('loader');
-      const loaderImage = document.getElementById('loaderImage');
-      const images = ['img/loader1.png', 'img/loader2.png'];
-      let currentIndex = 0;
-      const intervalTime = 500;
-      const duration = 10000;
-
-      const interval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        loaderImage.src = images[currentIndex];
-      }, intervalTime);
-
-      setTimeout(() => {
-        clearInterval(interval);
-        loader.classList.add('hidden');
-      }, duration);
-    });
-  </script>
-
 </body>
 
 </html>

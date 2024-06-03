@@ -945,32 +945,3 @@ nav {
     height: 25px;
   }
 }
-
-.loader {
-  background: #fff;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  z-index: 1;
-}
-
-.loader img {
-  max-width: 250px;
-  max-height: 250px;
-}
-
-@keyframes fadeOut {
-  0% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-  }
-}
-
-.hidden {
-  animation: fadeOut 1s forwards;
-}

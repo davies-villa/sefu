@@ -17,7 +17,11 @@
 </head>
 
 <body>
-  
+
+  <div class="loader" id="loader">
+    <img src="img/loader1.png" id="loaderImage" alt="Loader Image">
+  </div>
+
   <div class="header" id="lazy-image">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -156,8 +160,8 @@
 
   <section class="offer-section">
     <div class="offer">
-      <div class="offer-content" >
-        <div class="col-lg-7 col-12"  data-aos="fade-up" data-aos-duration="1000">
+      <div class="offer-content">
+        <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-duration="1000">
           <h2>Exclusive Offers</h2>
           <p>Discover unbeatable discounts on dream destinations, available only for our valued customers.</p>
           <button>View Offers</button>
@@ -274,6 +278,9 @@
       </div>
   </section>
 
+  <div class="loader" id="loader">
+    <img src="img/loader1.png" id="loaderImage" alt="Loader Image">
+  </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -320,6 +327,28 @@
   <script>
     AOS.init({
       once: true
+    });
+  </script>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const loader = document.getElementById('loader');
+      const loaderImage = document.getElementById('loaderImage');
+      const images = ['img/loader1.png', 'img/loader2.png'];
+      let currentIndex = 0;
+      const intervalTime = 500;
+      const duration = 10000;
+
+      const interval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        loaderImage.src = images[currentIndex];
+      }, intervalTime);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        loader.classList.add('hidden');
+      }, duration);
     });
   </script>
 

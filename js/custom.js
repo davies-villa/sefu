@@ -2,6 +2,8 @@ document.addEventListener("click", function(e) {
     closeAllSelect(e.target);
 });
 
+
+
 function closeAllSelect(elmnt) {
     var selects = document.getElementsByClassName("select-items");
     for (var i = 0; i < selects.length; i++) {

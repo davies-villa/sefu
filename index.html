@@ -18,6 +18,9 @@
 
 <body>
 
+  <div class="loader" id="loader">
+    <img src="img/loader1.png" id="loaderImage" alt="Loader Image">
+  </div>
 
 
   <div class="header" id="lazy-image">
@@ -284,6 +287,19 @@
   <script src="js/navbar.js"></script>
   <script src="js/custom.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    function showLoader() {
+      document.querySelector('.loader').style.display = 'block';
+    }
+
+    function hideLoader() {
+      document.querySelector('.loader').style.display = 'none';
+    }
+
+    // Example usage
+    showLoader();
+    setTimeout(hideLoader, 3000); // Hide loader after 3 seconds
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var lazyImage = document.getElementById('lazy-image');

@@ -715,7 +715,7 @@ nav {
   }
 }
 
-/* For extra small screens */
+
 @media (max-width: 576px) {
   .gallery-thumb {
     width: calc(50% - 3px);
@@ -889,12 +889,10 @@ nav {
 
 .like-button.liked i {
   color: red;
-  /* Lighter red when liked */
 }
 
 .like-button.liked:hover i {
   color: red;
-  /* Full red on hover when liked */
 }
 
 .activity-item .country {

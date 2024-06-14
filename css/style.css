@@ -505,6 +505,16 @@ nav {
 }
 
 @media (max-width: 768px) {
+
+  .header {
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/The\ Victoria\ Falls\ Hotel\ _1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .hero {
     padding-bottom: 4rem;
     padding-top: 4rem;
@@ -944,3 +954,15 @@ nav {
   }
 }
 
+.back-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #C38144;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

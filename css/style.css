@@ -561,7 +561,7 @@ nav {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 5px;
-  width: calc(16.66% - 15px);
+  width: calc(33.33 - 65px);
   height: 280px;
 }
 
@@ -593,7 +593,7 @@ nav {
 .gallery-thumb .gallery-text {
   color: #fff;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 13px;
   z-index: 2;
   opacity: 1;

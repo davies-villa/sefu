@@ -1060,3 +1060,20 @@ nav {
   }
 
 }
+
+.container-back-btn {
+  text-align: center;
+  margin-top: 20%;
+}
+.back-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #C38144;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.back-button:hover {
+  background-color: #a36736;
+}

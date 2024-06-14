@@ -61,262 +61,303 @@
       <div class="row">
         <div class="col-lg-9">
           <h1 class="hero-text">Relax Refresh Recharge...</h1>
-          <p class="hero-paragraph"> Experience the ultimate getaway at our hotel , where delicious cusine and exciting activities come together in perfect harmony. Whether you're looking to unwind with a great meal, explore new adventures or simply relax in style, we've got you covered.</p>
+          <p class="hero-paragraph">Experience the ultimate getaway at our hotel, where delicious cuisine and exciting
+            activities come together in perfect harmony. Whether you're looking to unwind with a great meal, explore new
+            adventures, or simply relax in style, we've got you covered.</p>
           <div class="row">
             <div class="col-lg-12">
-              <form class="form">
+              <form class="form" id="searchForm">
                 <div class="row mb-2">
                   <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
                     <div class="select-wrapper">
-                      <div class="form-control select-selected">Where To?</div>
-                      <div class="select-items select-hide">
-                        <div><a href="activities.html">Activities</a></div>
-                        <div><a href="restaurants.html">Restaurants</a></div>
-                        <div><a href="museums.html">Museums</a></div>
-                        <div><a href="lodges.html">Lodges</a></div>
-                      </div>
+                      <select class="form-control" id="destination">
+                        <option value="" disabled selected>Where To?</option>
+                        <option value="restaurants.html">Restaurants</option>
+                        <option value="activities.html">Activities</option>
+                        <option value="museums.html">Museums</option>
+                        <option value="lodges.html">Lodges</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
-                    <input type="text" placeholder="Select date range" class="form-control" name="daterange">
+                    <input type="text" placeholder="Select date range" class="form-control" name="daterange"
+                      id="daterange">
                   </div>
                   <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <input type="text" class="form-control" placeholder="Number of people
-
-                    " style="color: #fff;">
+                    <input type="text" class="form-control" placeholder="Number of people" name="numPeople"
+                      id="numPeople" style="color: #fff;">
                   </div>
                   <div class="col-sm-12 col-md-6 mb-lg-0 col-lg-2">
-                    <button type="submit" class=" btn-block search-btn form-control"
+                    <button type="submit" class="btn-block search-btn form-control"
                       style="background-color: #C38144; color: #fff;">Search</button>
                   </div>
                 </div>
+              </form>
             </div>
-            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <section class="destinations">
-    <div class="dest-text" data-aos="fade-up" data-aos-duration="1000">
-      <h2 class="destinations-text">Restaurants</h2>
-      <p class="destinations-paragraph">Your culinary adventure awaits</p>
-    </div>
-    <div class="gallery" data-aos="fade-up" data-aos-duration="1000">
-      <a href="jungle junction.html" class="gallery-thumb" data-fancybox="gallery">
-        <img src="img/1.png" alt="Image" class="img-fluid" id="lazy-image">
-        <div class="overlay"></div>
-        <div class="gallery-text">
-          <h3>Jungle Junction </h3>
+      <section class="destinations">
+        <div class="dest-text" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="destinations-text">Restaurants</h2>
+          <p class="destinations-paragraph">Your culinary adventure awaits</p>
         </div>
-      </a>
-      <a href="#" class="gallery-thumb" data-fancybox="gallery">
-        <img src="img/2.png" alt="Image" class="img-fluid" id="lazy-image">
-        <div class="overlay"></div>
-        <div class="gallery-text">
-          <h3>Stanley's Terrace</h3>
+        <div class="gallery" data-aos="fade-up" data-aos-duration="1000">
+          <a href="jungle junction.html" class="gallery-thumb" data-fancybox="gallery">
+            <img src="img/1.png" alt="Image" class="img-fluid" id="lazy-image">
+            <div class="overlay"></div>
+            <div class="gallery-text">
+              <h3>Jungle Junction </h3>
+            </div>
+          </a>
+          <a href="#" class="gallery-thumb" data-fancybox="gallery">
+            <img src="img/2.png" alt="Image" class="img-fluid" id="lazy-image">
+            <div class="overlay"></div>
+            <div class="gallery-text">
+              <h3>Stanley's Terrace</h3>
+            </div>
+          </a>
+          <a href="#" class="gallery-thumb" data-fancybox="gallery">
+            <img src="img/5.png" alt="Image" class="img-fluid" id="lazy-image">
+            <div class="overlay"></div>
+            <div class="gallery-text">
+              <h3>Livingstone Dining Room</h3>
+            </div>
+          </a>
+          <a href="#" class="gallery-thumb" data-fancybox="gallery">
+            <img src="img/6.png" alt="Image" class="img-fluid" id="lazy-image">
+            <div class="overlay"></div>
+            <div class="gallery-text">
+              <h3>The Lookout </h3>
+            </div>
+          </a>
+          <a href="#" class="gallery-thumb" data-fancybox="gallery">
+            <img src="img/4.png " alt="Image" class="img-fluid" id="lazy-image">
+            <div class="overlay"></div>
+            <div class="gallery-text">
+              <h3>Shongwe</h3>
+            </div>
+          </a>
+          <a href="#" class="gallery-thumb" data-fancybox="gallery">
+            <img src="img/3.png" alt="Image" class="img-fluid" id="lazy-image">
+            <div class="overlay"></div>
+            <div class="gallery-text">
+              <h3>Kutandara</h3>
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="#" class="gallery-thumb" data-fancybox="gallery">
-        <img src="img/5.png" alt="Image" class="img-fluid" id="lazy-image">
-        <div class="overlay"></div>
-        <div class="gallery-text">
-          <h3>Livingstone Dining Room</h3>
-        </div>
-      </a>
-        <a href="#" class="gallery-thumb" data-fancybox="gallery">
-          <img src="img/6.png" alt="Image" class="img-fluid" id="lazy-image">
-          <div class="overlay"></div>
-          <div class="gallery-text">
-            <h3>The Lookout </h3>
-          </div>
-        </a>
-        <a href="#" class="gallery-thumb" data-fancybox="gallery">
-          <img src="img/4.png " alt="Image" class="img-fluid" id="lazy-image">
-          <div class="overlay"></div>
-          <div class="gallery-text">
-            <h3>Shongwe</h3>
-          </div>
-        </a>
-        <a href="#" class="gallery-thumb" data-fancybox="gallery">
-          <img src="img/3.png" alt="Image" class="img-fluid" id="lazy-image">
-          <div class="overlay"></div>
-          <div class="gallery-text">
-            <h3>Kutandara</h3>
-          </div>
-        </a>
-    </div>
-  </section>
+      </section>
 
-  <section class="offer-section">
-    <div class="offer">
-      <div class="offer-content">
-        <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-duration="1000">
-          <h2>Exclusive Offers</h2>
-          <p>Discover unbeatable discounts on dream holiday, available only for our valued customers.</p>
-          <button>View Offers</button>
+      <section class="offer-section">
+        <div class="offer">
+          <div class="offer-content">
+            <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-duration="1000">
+              <h2>Exclusive Offers</h2>
+              <p>Discover unbeatable discounts on dream holiday, available only for our valued customers.</p>
+              <button>View Offers</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="activities">
-    <div class="activities-container" data-aos="fade-up" data-aos-duration="1000">
-      <h1 class="activity-text">Featured Activities</h1>
-      <p class="activity-paragraph">Discover To-do Fun Activities</p>
-      <div class="activity-grid">
-        <div class="activity-item">
-          <div class="activity-image-container">
-            <img src="img/Gorge swing.jpg" alt="Activity 1" style="height: 250px;" id="lazy-image">
-            <button class="like-button" onclick="toggleLike()">
-              <img src="img/heart.png" alt="Like" class="heart-icon">
-            </button>
+      <section class="activities">
+        <div class="activities-container" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="activity-text">Featured Activities</h1>
+          <p class="activity-paragraph">Discover To-do Fun Activities</p>
+          <div class="activity-grid">
+            <div class="activity-item">
+              <div class="activity-image-container">
+                <img src="img/Gorge swing.jpg" alt="Activity 1" style="height: 250px;" id="lazy-image">
+                <button class="like-button" onclick="toggleLike()">
+                  <img src="img/heart.png" alt="Like" class="heart-icon">
+                </button>
+              </div>
+              <div class="activity">
+                <h1>Gorge Swing</h1>
+              </div>
+              <div class="activity-info">
+                <p>
+                  The Victoria Falls Gorge Swing is an adrenaline-pumping adventure that promises an unforgettable
+                  experience for thrill-seekers. Located at the majestic Victoria Falls. <a href="#" target="_blank"
+                    style="color: #C38144;">Read
+                    more</a>
+                </p>
+              </div>
+              <div class="review-item">
+                <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
+                    style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.8</span> • (8
+                  reviews)</h1>
+              </div>
+              <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$115</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-image-container">
+                <img src="img/elephant.png" alt="Activity 1" style="height: 250px;" id="lazy-image">
+                <button class="like-button" onclick="toggleLike()">
+                  <img src="img/heart.png" alt="Like" class="heart-icon">
+                </button>
+              </div>
+              <div class="activity">
+                <h1>Tour of the Victoria Falls</h1>
+              </div>
+              <div class="activity-info">
+                <p>
+                  Embark on an awe-inspiring tour of Victoria Falls, one of the Seven Natural Wonders of the World.
+                  Witness
+                  the sheer power and beauty of the "Smoke that Thunders" as millions of liters of water cascade over
+                  the
+                  edge every minute. <a href="#" target="_blank" style="color: #C38144;">Read
+                    more</a>
+                </p>
+              </div>
+              <div class="review-item">
+                <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
+                    style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.9</span> • (40
+                  reviews)</h1>
+              </div>
+              <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$15</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-image-container">
+                <img src="img/safaridrive.jpg" alt="Activity 1" style="height: 250px;" id="lazy-image">
+                <button class="like-button" onclick="toggleLike()">
+                  <img src="img/heart.png" alt="Like" class="heart-icon">
+                </button>
+              </div>
+              <div class="activity">
+                <h1>Chobe Day Trip</h1>
+              </div>
+              <div class="activity-info">
+                <p>
+                  Discover the wonders of the Chobe National Park on a thrilling day trip, combining a river cruise and
+                  a
+                  game drive. Start your adventure with a serene boat ride on the Chobe River, where you can spot
+                  elephants,
+                  hippos, and a variety of birdlife. <a href="#" target="_blank" style="color: #C38144;">Read
+                    more</a>
+                </p>
+              </div>
+              <div class="review-item">
+                <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
+                    style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.8</span> • (12
+                  reviews)</h1>
+              </div>
+              <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$180</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-image-container">
+                <img src="img/pureafrica.jpg" alt="Activity 1" style="height: 250px;" id="lazy-image">
+                <button class="like-button" onclick="toggleLike()">
+                  <img src="img/heart.png" alt="Like" class="heart-icon">
+                </button>
+              </div>
+              <div class="activity">
+                <h1>Zambezi Cruise</h1>
+              </div>
+              <div class="activity-info">
+                <p>
+                  Experience the beauty of the Zambezi River on a scenic boat cruise, where you can witness stunning
+                  sunsets
+                  and diverse wildlife. As you glide along the water, keep an eye out for hippos, crocodiles, and a
+                  variety
+                  of bird species. <a href="#" target="_blank" style="color: #C38144;">Read
+                    more</a>
+                </p>
+              </div>
+              <div class="review-item">
+                <h1 style="font-size: 15px; font-weight: 500; color: #9a9a9a;"><span class="badge badge-warning"
+                    style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.7</span> • (24
+                  reviews)</h1>
+              </div>
+              <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$40</div>
+            </div>
           </div>
-          <div class="activity">
-            <h1>Gorge Swing</h1>
-          </div>
-          <div class="activity-info">
-            <p>
-              The Victoria Falls Gorge Swing is an adrenaline-pumping adventure that promises an unforgettable
-              experience for thrill-seekers. Located at the majestic Victoria Falls. <a href="#" target="_blank"
-                style="color: #C38144;">Read
-                more</a>
-            </p>
-          </div>
-          <div class="review-item">
-            <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.8</span> • (8
-              reviews)</h1>
-          </div>
-          <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$115</div>
-        </div>
-        <div class="activity-item">
-          <div class="activity-image-container">
-            <img src="img/elephant.png" alt="Activity 1" style="height: 250px;" id="lazy-image">
-            <button class="like-button" onclick="toggleLike()">
-              <img src="img/heart.png" alt="Like" class="heart-icon">
-            </button>
-          </div>
-          <div class="activity">
-            <h1>Tour of the Victoria Falls</h1>
-          </div>
-          <div class="activity-info">
-            <p>
-              Embark on an awe-inspiring tour of Victoria Falls, one of the Seven Natural Wonders of the World. Witness
-              the sheer power and beauty of the "Smoke that Thunders" as millions of liters of water cascade over the
-              edge every minute. <a href="#" target="_blank" style="color: #C38144;">Read
-                more</a>
-            </p>
-          </div>
-          <div class="review-item">
-            <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.9</span> • (40
-              reviews)</h1>
-          </div>
-          <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$15</div>
-        </div>
-        <div class="activity-item">
-          <div class="activity-image-container">
-            <img src="img/safaridrive.jpg" alt="Activity 1" style="height: 250px;" id="lazy-image">
-            <button class="like-button" onclick="toggleLike()">
-              <img src="img/heart.png" alt="Like" class="heart-icon">
-            </button>
-          </div>
-          <div class="activity">
-            <h1>Chobe Day Trip</h1>
-          </div>
-          <div class="activity-info">
-            <p>
-              Discover the wonders of the Chobe National Park on a thrilling day trip, combining a river cruise and a
-              game drive. Start your adventure with a serene boat ride on the Chobe River, where you can spot elephants,
-              hippos, and a variety of birdlife. <a href="#" target="_blank" style="color: #C38144;">Read
-                more</a>
-            </p>
-          </div>
-          <div class="review-item">
-            <h1 style="font-size: 15px; font-weight: 400; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.8</span> • (12
-              reviews)</h1>
-          </div>
-          <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$180</div>
-        </div>
-        <div class="activity-item">
-          <div class="activity-image-container">
-            <img src="img/pureafrica.jpg" alt="Activity 1" style="height: 250px;" id="lazy-image">
-            <button class="like-button" onclick="toggleLike()">
-              <img src="img/heart.png" alt="Like" class="heart-icon">
-            </button>
-          </div>
-          <div class="activity">
-            <h1>Zambezi Cruise</h1>
-          </div>
-          <div class="activity-info">
-            <p>
-              Experience the beauty of the Zambezi River on a scenic boat cruise, where you can witness stunning sunsets
-              and diverse wildlife. As you glide along the water, keep an eye out for hippos, crocodiles, and a variety
-              of bird species. <a href="#" target="_blank" style="color: #C38144;">Read
-                more</a>
-            </p>
-          </div>
-          <div class="review-item">
-            <h1 style="font-size: 15px; font-weight: 500; color: #9a9a9a;"><span class="badge badge-warning"
-                style="background-color: #C38144; border-radius: 2px; color: #fff; padding: 5;">4.7</span> • (24
-              reviews)</h1>
-          </div>
-          <div class="price" style="text-align: right;"><span class="price-extra">Starting from </span>$40</div>
-        </div>
-      </div>
-  </section>
+      </section>
 
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var lazyImage = document.getElementById('lazy-image');
-      lazyImage.src = lazyImage.dataset.src;
-    });
-  </script>
-  <script>
-    function toggleLike() {
-      const button = document.querySelector('.like-button');
-      const icon = button.querySelector('i');
-      button.classList.toggle('liked');
-      if (button.classList.contains('liked')) {
-        icon.classList.remove('far');
-        icon.classList.add('fas');
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <script src="js/navbar.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var lazyImage = document.getElementById('lazy-image');
+          lazyImage.src = lazyImage.dataset.src;
+        });
+      </script>
+      <script>
+        function toggleLike() {
+          const button = document.querySelector('.like-button');
+          const icon = button.querySelector('i');
+          button.classList.toggle('liked');
+          if (button.classList.contains('liked')) {
+            icon.classList.remove('far');
+            icon.classList.add('fas');
+          } else {
+            icon.classList.remove('fas');
+            icon.classList.add('far');
+          }
+        }
+      </script>
+      <script>
+        $(function () {
+          $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+          }, function (start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+          });
+        });
+      </script>
+      <script>
+        $(document).ready(function () {
+          $('.carousel').carousel();
+        });
+      </script>
+      <script>
+        AOS.init({
+          once: true
+        });
+      </script>
+
+<script>
+  window.onload = function() {
+      document.getElementById('searchForm').reset();
+  };
+
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const destination = document.getElementById('destination').value;
+      const daterange = document.getElementById('daterange').value;
+      const numPeople = document.getElementById('numPeople').value;
+      
+      if (destination) {
+          let url = destination;
+          const params = new URLSearchParams();
+          
+          if (daterange) {
+              params.append('daterange', daterange);
+          }
+          if (numPeople) {
+              params.append('numPeople', numPeople);
+          }
+          
+          if (params.toString()) {
+              url += '?' + params.toString();
+          }
+          
+          window.location.href = url;
       } else {
-        icon.classList.remove('fas');
-        icon.classList.add('far');
+          alert('Please select a destination.');
       }
-    }
-  </script>
-  <script>
-    $(function () {
-      $('input[name="daterange"]').daterangepicker({
-        opens: 'left'
-      }, function (start, end, label) {
-        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('.carousel').carousel();
-    });
-  </script>
-  <script>
-    AOS.init({
-      once: true
-    });
-  </script>
+  });
+</script>
 </body>
 
 </html>
